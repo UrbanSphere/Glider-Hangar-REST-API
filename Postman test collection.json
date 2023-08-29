@@ -1,0 +1,481 @@
+{
+	"info": {
+		"_postman_id": "7d2a420c-11e6-446d-b684-19c797ec9bfe",
+		"name": "SRI03-Zduńczyk-s28649",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21994121"
+	},
+	"item": [
+		{
+			"name": "Gliders",
+			"item": [
+				{
+					"name": "get gliders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/gliders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gliders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/gliders/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gliders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post Puchacz",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SZD-50 Puchacz\",\r\n    \"origin\": \"Poland\",\r\n    \"firstFlightDate\": \"1979-04-13\",\r\n    \"maxVel\": 215\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/gliders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gliders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post Pirat",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SZD-30 Pirat\",\r\n    \"origin\": \"Poland\",\r\n    \"firstFlightDate\": \"1966-05-19\",\r\n    \"maxVel\": 195\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/gliders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gliders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post Eta",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Eta\",\r\n    \"origin\": \"German-Italian\",\r\n    \"firstFlightDate\": \"2000-07-31\",\r\n    \"maxVel\": 250\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/gliders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gliders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete glider",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/gliders/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gliders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update glider",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SZD-9 Bocian\",\r\n    \"origin\": \"Poland\",\r\n    \"firstFlightDate\": \"1952-03-10\",\r\n    \"maxVel\": 200\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/gliders/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gliders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Puchacz to A",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/hangars/1/gliders/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars",
+								"1",
+								"gliders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Pirat to A",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/hangars/1/gliders/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars",
+								"1",
+								"gliders",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Eta to A",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/hangars/1/gliders/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars",
+								"1",
+								"gliders",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove Puchacz from A",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/hangars/1/gliders/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars",
+								"1",
+								"gliders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hangars",
+			"item": [
+				{
+					"name": "get hangars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/hangars",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/hangars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Hangar A contents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/hangars/1/gliders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars",
+								"1",
+								"gliders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post Hangar A",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hangar A\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/hangars",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post Hangar B",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hangar B\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/hangars",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post Hangar C",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hangar C\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/hangars",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete hangar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/hangars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update hangar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hangar X\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/hangars/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hangars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
